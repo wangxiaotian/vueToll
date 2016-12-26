@@ -8,9 +8,16 @@
 	<div id="app">
 		<div id="content">
 		    <h3>测试文字</h3>
-			<navbar></navbar>
-			<router-view></router-view>
+			<navbar>{{message}}</navbar>
 		</div>
 	</div>
+	<script>
+		var a = new Vue({
+			el : '#content',
+			data : {
+				message : '测试文字'
+			}
+		})
+	</script>
 </body>
 </html>
